@@ -1,0 +1,17 @@
+<div class="add-review">
+        <div class="container card">
+            <h5>Add a review for:</h5>
+            <h3>{{bookName}}</h3>
+
+            <div class="row">
+                    <div class="alert alert-danger" ng-show="error">{{error}}</div> 
+                    <form name="addReviewForm" class="container">
+                        <div class="row">
+                            <label>* Review Content:</label>
+                            <textarea rows="10" class="form-control" ng-model="review" required="required"></textarea>
+                            <button class="btn btn-success mt-2" ng-click="addReview()" ng-disabled="addReviewForm.$invalid">Add a review</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+</div>
